@@ -742,8 +742,8 @@ footer {
 		align-items: center;
 	}
 
-	.skill-card-container {
-		font-size: 0.9rem;
+	.skill-card-container, .educational-background-container {
+		font-size: 0.5rem;
 	}
 	
 	.skill-card {
@@ -829,6 +829,13 @@ footer {
 		height: 100%;
 	}
 
+	.slideshow-container {
+		height: 250px;
+	/* width: 100%; */
+	/* margin: 0 auto; */
+	/* display: flex; */
+	/* align-items: center; */
+}
 	
 }
 
