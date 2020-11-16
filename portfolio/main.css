@@ -251,7 +251,7 @@ section {
 
 section h2 {
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	font-size: 0.8rem;
 }
 
 .title-container {
@@ -812,7 +812,8 @@ footer {
 	
 	
 	.main_header {
-		grid-template-columns: 60% 40%;
+		padding-top: 120px;
+		grid-template-columns: 100%;
 	}
 	
 	
@@ -825,6 +826,10 @@ footer {
 	.pos1 {
 		font-size: 1.0rem;
 		text-align: center;
+	}
+	
+	.pos1 p {
+		font-size: 0.5rem;
 	}
 	
 	.social-media-container {
@@ -845,7 +850,7 @@ footer {
 		padding: 10px 14px;
 		text-transform: capitalize;
 		margin-top: 60px;
-		font-size: 0.7rem;
+		font-size: 0.6rem;
 		letter-spacing: 4px;
 		border-radius: 3px;
 		box-shadow: 8px 10px 10px -10px rgba(0,0,0,0.3);
@@ -861,7 +866,7 @@ footer {
 		padding: 10px 14px;
 		text-transform: capitalize;
 		margin-top: 60px;
-		font-size: 0.7rem;
+		font-size: 0.6rem;
 		letter-spacing: 4px;
 		border-radius: 3px;
 		box-shadow: 8px 10px 10px -10px rgba(0,0,0,0.3);
@@ -877,6 +882,7 @@ footer {
 		position: absolute;
 		z-index: 30;
 		background-color: rgba(0,0,0,0.9);
+		padding: 20px 0px;
 	}
 	
 	.modal-container {
