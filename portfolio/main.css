@@ -844,12 +844,12 @@ footer {
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 50% 50%;
-		/* background: red; */
-		grid-gap: 10px;
+		background: red;
+		/* grid-gap: 10px; */
 	}
 	
 	.educational-bg-col {
-		margin: 15px 0px;
+		margin: 15px auto;
 	}
 	
 }
