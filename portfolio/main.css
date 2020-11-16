@@ -807,8 +807,9 @@ footer {
 	
 	
 	.main_header {
-		grid-template-columns: 100%;
+		grid-template-columns: 60% 40%;
 	}
+	
 	
 	.main-content-img {
 		height: 75%;
@@ -817,11 +818,20 @@ footer {
 	}
 	
 	.pos1 {
-		padding-top: 120px;
-		font-size: 1.3rem;
+		font-size: 1.0rem;
 		text-align: center;
 	}
 	
+	.social-media-container {
+		margin-top: 40px;
+	}
+	
+	.social-media-container i {
+		margin: 0px 9px;
+		opacity: 1;
+		//color: #E38B64;
+	}
+		
 	.btn-readmore {
 		color: white;
 		background-color: #E38B64;
@@ -830,7 +840,7 @@ footer {
 		padding: 10px 14px;
 		text-transform: capitalize;
 		margin-top: 60px;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 		letter-spacing: 4px;
 		border-radius: 3px;
 		box-shadow: 8px 10px 10px -10px rgba(0,0,0,0.3);
@@ -846,7 +856,7 @@ footer {
 		padding: 10px 14px;
 		text-transform: capitalize;
 		margin-top: 60px;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 		letter-spacing: 4px;
 		border-radius: 3px;
 		box-shadow: 8px 10px 10px -10px rgba(0,0,0,0.3);
