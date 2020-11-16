@@ -249,6 +249,11 @@ section {
 	margin: 150px 0px;
 }
 
+section h2 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
 .title-container {
 	margin-bottom: 20px;
 }
