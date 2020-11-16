@@ -368,6 +368,7 @@ section {
 	/* background: red; */
 	width: 85%;
 	/* height: 75%; */
+	flex-flow: row wrap;
 }
 
 .main-section-container-three .fab {
@@ -436,12 +437,15 @@ section {
 	justify-content: center;
 	align-items: center;
 	width: 50%;
+	margin: 0 auto;
 	/* background: blue; */
 }
 
-.col1, .col2 {
+.text {
 	margin: 0 auto;
 	line-height: 1.6;
+	text-align: center;
+	/* background: red; */
 }
 
 .main-section-container-four img {
@@ -842,7 +846,7 @@ footer {
 		width: 100%;
 		/* height: 100%; */
 		margin: 0 auto;
-		display: grid;
+		display: block;
 		grid-template-columns: 50% 50%;
 		/* background: red; */
 		/* grid-gap: 10px; */
