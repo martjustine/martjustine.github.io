@@ -251,7 +251,14 @@ section {
 
 section h2 {
 	text-transform: uppercase;
-	font-size: 0.8rem;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+section h3 {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	text-align: center;
 }
 
 .title-container {
@@ -403,7 +410,6 @@ section h2 {
 }
 
 .skill-image img {
-	height: 100%;
 	width: 100%;
 	border-radius: 2px;
 }
@@ -464,6 +470,85 @@ section h2 {
 	/* display: flex; */
 	/* justify-content: space-around; */
 /* } */
+
+.intouch-container {
+	margin: 0 auto;
+	width: 60%;
+	/* background-color: #E38B64; */
+	display: grid;
+	grid-template-columns: 50% 50%;
+	box-shadow: 8px 10px 10px -10px rgba(0,0,0,0.5);
+}
+
+.intouch-text img {
+	height: 100%;
+	width: 100%;
+	background-position: center;
+}
+
+.intouch-form {
+	background-color: #E38B64;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 2px;
+	flex-direction: column;
+}
+
+.intouch-form form {
+	line-height: 65px;
+}
+
+.input-form {
+	position: relative;
+}
+
+.input-icon {
+	position: absolute;
+	top: 0;
+	left: 8px;
+}
+
+.intouch-form hr {
+	width: 40%;
+	margin: 10px auto;
+}
+
+.intouch-form input, .intouch-form button {
+	padding: 15px 30px;
+	width: 290px;
+	outline: none;
+	border-radius: 3px;
+	border: none;
+	letter-spacing: 2px;
+}
+
+.intouch-form button {
+	font-weight: bold;
+	transition: 200ms ease;
+	cursor: pointer;
+	background-color: #FFF;
+	color: #000;
+}
+
+.intouch-form button i {
+	margin: 0 1px;
+}
+
+.intouch-form i {
+	cursor: pointer;
+}
+
+.intouch-form .qq {
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+.intouch-form button:hover {
+	background-color: rgba(255,255,255,0.9);
+}
+
 
 .btn-readmore {
 	color: white;
@@ -763,17 +848,26 @@ footer {
 	}
 	
 	.main-section-container-three .fab {
-	font-size: 20px;
+		font-size: 20px;
 	}
 	
 
-	
 	.main-section-container-four img {
 		height: 200px;
 		width: 250px;
 		border-radius: 5px;
 		box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.3);
 	}
+	
+	.intouch-container {
+		margin: 0 auto;
+		width: 60%;
+		/* background-color: #E38B64; */
+		display: block;
+		grid-template-columns: 50% 50%;
+		box-shadow: 8px 10px 10px -10px rgba(0,0,0,0.5);
+	}
+	
 	
 	.nav-container a:hover {
 		color: #E38B64;
@@ -924,6 +1018,18 @@ footer {
 		margin: 15px auto;
 	}
 	
+	.intouch-form input, .intouch-form button {
+		padding: 15px 30px;
+		width: 190px;
+		outline: none;
+		border-radius: 3px;
+		border: none;
+		letter-spacing: 2px;
+	}
+	
+	.intouch-form ::placeholder, .intouch-form button {
+		font-size: 0.7rem;
+	}
 }
 
 @media screen and (max-width: 890px), screen and (max-height: 600px) {
