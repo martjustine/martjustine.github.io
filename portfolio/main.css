@@ -690,8 +690,9 @@ section h3 {
 
 .menu {
 	position: absolute;
-	top: 0;
-	left: 5px;
+	/* top: 50%; */
+	left: 10px;
+	/* transform: translate(0, -50%); */
 }
 
 .menu {
@@ -898,6 +899,7 @@ footer {
 		display: block;
 		height: 100%;
 		}
+
 	
 }
 
