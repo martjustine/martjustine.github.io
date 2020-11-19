@@ -1034,6 +1034,11 @@ footer {
 	.intouch-form {
 		padding: 20px;
 	}
+	
+	.intouch-form h3, .qq {
+		font-size: 0.6rem;
+	}
+	
 }
 
 @media screen and (max-width: 890px), screen and (max-height: 600px) {
