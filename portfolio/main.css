@@ -1030,6 +1030,10 @@ footer {
 	.intouch-form ::placeholder, .intouch-form button {
 		font-size: 0.7rem;
 	}
+	
+	.intouch-form {
+		padding: 20px;
+	}
 }
 
 @media screen and (max-width: 890px), screen and (max-height: 600px) {
