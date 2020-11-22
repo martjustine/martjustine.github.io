@@ -303,14 +303,15 @@ section h3 {
 }
 
 .card, .img, .front, .back {
-	border-radius: 4px;
+	/* border-radius: 4px; */
+	border-radius: 100% 18% 37% 100% / 88% 0% 93% 50%  ;
 	box-shadow: 8px 10px 10px -10px rgba(0,0,0,0.5);
 	cursor: pointer;
 }
 
 .front {
 	backface-visibility: hidden;
-	background-color: yellow;
+	/* background-color: yellow; */
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -333,7 +334,8 @@ section h3 {
 }
 
 .card:hover {
-	transform: rotateY(180deg);
+	/* transform: rotateY(180deg); */
+	transform: border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
 }
 
 .main-section-container-two {
@@ -516,8 +518,8 @@ section h3 {
 }
 
 .intouch-form input, .intouch-form button {
-	padding: 15px 30px;
-	width: 290px;
+	padding: 12px 30px;
+	width: 100%;
 	outline: none;
 	border-radius: 3px;
 	border: none;
@@ -667,7 +669,8 @@ section h3 {
 .modal img {
 	height: 120px;
 	width: 120px;
-	border-radius: 50%;
+	/* border-radius: 50%; */
+	border-radius: 62% 31% 20% 77% / 40% 32% 61% 48%  ;
 	box-shadow: 8px 12px 10px -10px rgba(0,0,0,.3);
 }
 
