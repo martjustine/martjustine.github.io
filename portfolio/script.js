@@ -13,6 +13,49 @@ var i = 0;
 var time = 1000;
 var images = ['slideshow/sw1.jpg', 'slideshow/sw2.jpg', 'slideshow/sw3.jpg', 'slideshow/sw4.jpg'];
 
+var likes = 0;
+var disLikes = 0;
+
+//image 1 likes and dislikes
+var likeBtn = document.getElementById('like-button');
+var resultLike = document.getElementById('result-like');
+var dislikeBtn = document.getElementById('dislike-button');
+var resultdisLike = document.getElementById('result-dislike');
+
+//image 2 likes and dislikes
+var likeBtn = document.getElementById('like-button');
+var resultLike = document.getElementById('result-like');
+
+//image 2 likes and dislikes
+var likeBtn = document.getElementById('like-button');
+var resultLike = document.getElementById('result-like');
+
+likeBtn.addEventListener('click', addLike);
+dislikeBtn.addEventListener('click', adddisLike);
+
+//image1 function
+function addLike(){
+	likes++;
+	resultLike.innerHTML = likes;
+}
+
+// function addLike(){
+	// if(document.getElementById('overlay').style.visibility === 'visible'){
+			// document.getElementById('overlay').style.visibility = 'hidden';
+	// } else {
+			// document.getElementById('overlay').style.visibility = 'visible';
+	// }
+	
+	// document.getElementById('overlay').classList.add('show');
+// }
+
+function adddisLike(){
+	disLikes++;
+	resultdisLike.innerHTML = disLikes;
+}
+
+//slideshow function
+
 function changeImg(){
 	document.getElementById('img').src = images[i];
 	
