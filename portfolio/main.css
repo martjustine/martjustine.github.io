@@ -323,13 +323,14 @@ section h3 {
 
 
 .card-container {
-	height: 350px;
+	height: 390px;
 	width: 300px;
 	position: relative;
 	margin: 20px 10px;
 	/* background-color: red; */
 	box-shadow: 10px 10px 10px -10px;
 	background-color: rgba(0,0,0,0.7);
+	border-radius: 4px;
 }
 
 .card {
@@ -350,6 +351,17 @@ section h3 {
 	color: white;
 }
 
+.id {
+	height: 10px;
+	width: 50px;
+	background: #F0F8FB;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 4px;
+}
+
 .card h2 {
 	color: white;
 	letter-spacing: 3px;
@@ -358,7 +370,7 @@ section h3 {
 
 .team-social-media {
 	display: flex;
-	margin-top: 15px;
+	margin-top: 25px;
 }
 
 .team-social-media i {
@@ -514,7 +526,7 @@ section h3 {
 	/* box-shadow: 20px 30px 0px -20px rgba(0,0,0,.5), */
 				/* 0px 40px 0px -20px rgba(0,0,0,.3), */
 				/* 0px 20px 0px -20px rgba(0,0,0,.1); */
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 /* .front { */
@@ -1220,7 +1232,7 @@ footer {
 	}
 	
 	.card-container {
-		height: 300px;
+		height: 350px;
 		width: 250px;
 		position: relative;
 		margin: 30px 10px;
