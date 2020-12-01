@@ -13,6 +13,70 @@ var i = 0;
 var time = 1000;
 var images = ['slideshow/sw1.jpg', 'slideshow/sw2.jpg', 'slideshow/sw3.jpg', 'slideshow/sw4.jpg'];
 
+
+//typing letters
+
+var str = 'mart justine bermejo';
+var output = document.getElementById('name');
+var index = 0;
+
+function type(){
+	if(index < str.length){
+		output.innerHTML += str.charAt(index);
+		index++
+		setTimeout(type, 350);
+	} else {
+		setTimeout(erase, 1000);
+	}
+}
+
+setTimeout(type, 200);
+
+function erase(){
+	if(index >= 0){
+		var temp = str.substring(0, index);
+		output.innerHTML = temp;
+		index--;
+		setTimeout(erase, 200);
+	} else {
+		setTimeout(type, 500);
+	}
+}
+
+//typing names
+// var texts = ['mart justine bermejo'];
+// var count = 0;
+// var index = 0;
+// var letter = '';
+// var currentText = '';
+
+
+
+// (function type(){
+	
+	// if(count === texts.length){ //taga check lang to kung anong current text ang naka select
+		// count = 0;
+	
+	// }
+	
+	// currentText = texts[count]; //current text dun sa array
+	// letter = currentText.slice(0, index++);
+
+	// document.getElementById('name').textContent = letter;
+	
+	// if(letter.length === currentText.length){
+	
+	
+		// index = 0;
+		
+	
+	// }
+
+		
+		// setTimeout(type, 200);
+		
+// })();
+
 // var likes = 0;
 // var disLikes = 0;
 
