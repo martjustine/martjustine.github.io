@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+			<link rel="stylesheet" href="css/all.css">
+	</head>
+		
+<body>
+<style>
+
+	body{
+		display: flex;
+		justify-content: center;
+	}
+	
+	#txt {
+		font-size: 2em;
+	}
+
+</style>
+	
+
+
+
+<div class="container" id="">
+	<span id="txt"></span>
+</div>
+
+<script>
+
+	<!-- var str = document.getElementById('txt').innerText; -->
+	
+	<!-- document.getElementById('txt').innerText = ''; -->
+	
+	var str = 'mart justine'; //declare ka muna ng string na gusto mong i output
+	
+	var output = document.getElementById('txt'); //i-initialize mo yung span id dun sa html mo at isave sa variable output
+	var index = 0; //starting point kung saan mag sisimulang kunin ang index ng string
+
+	function type(){ //gawa ka ng function type para sa mag tatype yung bawat letters
+		if(index < str.length){
+			output.innerHTML += str.charAt(index);
+			index++;
+			setTimeout(type, 200);
+		} else {
+			setTimeout(erase, 200);
+		}
+	}
+	
+	setTimeout(type, 200);
+	
+	//erase
+	
+	function erase(){ //gawa ka ng function erase para kapag na reach na yung last index dun sa type function ma iinvoke etong erase function
+		if(index >= 0){
+			var temp = str.substring(0, index);
+			output.innerText = temp;
+			index--;
+			
+			setTimeout(erase, 200);
+		} else {
+			setTimeout(type, 200);
+		}
+	}
+
+</script>
+</body>
+</html>
