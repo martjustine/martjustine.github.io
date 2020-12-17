@@ -1,0 +1,159 @@
+<html>
+<head>
+		<title>People Also Ask</title>
+		<link rel="stylesheet" href="css/all.css">
+</head>
+<body id="people-also-ask">
+<style>
+	main {
+		width: 600px;
+		margin: 100px auto;
+	}
+	
+	.show {
+		display: block;
+	}
+	
+	main ul {
+		list-style-type: none;
+	}
+
+	.question {
+		background-color: whitesmoke;
+		padding: 20px;
+		position: relative;
+		cursor: pointer;
+		transition: background-color 0.3s linear;
+	}
+	
+	.question::after {
+		content: '\f078';
+		font-family: 'Font Awesome 5 free';
+		font-weight: 900;
+		float: right;
+	}
+	
+	.question.is-open::after {
+		content: '\f077';
+	}
+	
+	.question:hover, .is-open {
+		background-color: #ddd;
+	}
+	
+	.is-open {
+		font-weight: 800;
+	}
+	
+	.is-closed {
+		opacity: 0.5;
+	}
+	
+	.question i {
+		position: absolute;
+		right: 10px;
+	}
+	
+	.answer {
+		padding: 0 20px;
+		border-right: 1px solid whitesmoke;
+		border-left: 1px solid whitesmoke;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-in-out;
+	}
+	
+	ol {
+		margin-bottom: 15px;
+	}
+	
+</style>
+				<main>
+				 <h1>People also ask</h1>
+				 <ul id="questions">
+					 <li>
+						 <div class="question">
+							How do I enable JavaScript Chrome?
+							<!-- <i class="fa fa-chevron-down chevron"></i> -->
+						 </div>
+						 <div class="answer">
+							<p><strong>If you'd like to turn JavaScript
+							 off or on for all sites:</strong></p>
+							 <ol>
+								 <li>Click the Chrome menu in the top right-hand
+								 corner of your browser.</li>
+								 <li>Select Settings.</li>
+								 <li>Click Show advanced settings.</li>
+								 <li>Under the "Privacy" section,
+								 click the Content settings button.</li>
+							 </ol>
+						 </div>
+					 </li>
+					 
+					  <li>
+						 <div class="question">
+							How do I enable JavaScript IE?
+							<!-- <i class="fa fa-chevron-down chevron"></i> -->
+						 </div>
+						 <div class="answer">
+							<p><strong>If you'd like to turn JavaScript
+							 off or on for all sites:</strong></p>
+							 <ol>
+								 <li>Click the Chrome menu in the top right-hand
+								 corner of your browser.</li>
+								 <li>Select Settings.</li>
+								 <li>Click Show advanced settings.</li>
+								 <li>Under the "Privacy" section,
+								 click the Content settings button.</li>
+							 </ol>
+						 </div>
+					 </li>
+					 
+					  <li>
+						 <div class="question">
+							How do I enable JavaScript Opera?
+							<!-- <i class="fa fa-chevron-down chevron"></i> -->
+						 </div>
+						 <div class="answer">
+							<p><strong>If you'd like to turn JavaScript
+							 off or on for all sites:</strong></p>
+							 <ol>
+								 <li>Click the Chrome menu in the top right-hand
+								 corner of your browser.</li>
+								 <li>Select Settings.</li>
+								 <li>Click Show advanced settings.</li>
+								 <li>Under the "Privacy" section,
+								 click the Content settings button.</li>
+							 </ol>
+						 </div>
+					 </li>
+				 </ul>
+				 </main>
+				 
+<script>
+		 
+		 var questions = document.getElementsByClassName('question');
+		 
+		for(var i = 0; i < questions.length; i++){
+			questions[i].addEventListener('click', function(){
+				this.classList.toggle('is-open');
+				var content = this.nextElementSibling;
+				
+				if(content.style.maxHeight){
+				//the accordion is open, and need to closed
+					content.style.maxHeight = null;
+					this.classList.add('is-closed');
+				} else {
+				//the accordion is closed, and need to open base on its specific height
+					content.style.maxHeight = content.scrollHeight + 'px';
+				}
+			});
+			
+		}
+		
+
+
+		
+</script>
+</body>
+</html>
