@@ -16,9 +16,38 @@ var images = ['slideshow/sw1.jpg', 'slideshow/sw2.jpg', 'slideshow/sw3.jpg', 'sl
 
 //typing letters
 
-var str = 'mart justine bermejo';
+var str = 'hi, I\'m mart justine bermejo';
 var output = document.getElementById('name');
 var index = 0;
+
+//slider
+
+var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+var mySlider = ['slideshow/sw1.jpg', 'slideshow/sw2.jpg', 'slideshow/sw4.jpg'];
+var x = 0;
+
+
+next.addEventListener('click', function() {
+	if(x < mySlider.length - 1){
+		x++;
+	} else {
+		x = 0;
+	}
+	
+	document.getElementById('image').src = mySlider[x];
+});
+
+prev.addEventListener('click', function() {
+	if(x == 0){
+		x = mySlider.length - 1;
+	} else {
+		x--;
+	}
+	
+	document.getElementById('image').src = mySlider[x];
+});
+
 
 function type(){
 	if(index < str.length){
@@ -30,14 +59,14 @@ function type(){
 	}
 }
 
-setTimeout(type, 200);
+setTimeout(type, 1000);
 
 function erase(){
 	if(index >= 0){
 		var temp = str.substring(0, index);
 		output.innerHTML = temp;
 		index--;
-		setTimeout(erase, 200);
+		setTimeout(erase, 250);
 	} else {
 		setTimeout(type, 500);
 	}

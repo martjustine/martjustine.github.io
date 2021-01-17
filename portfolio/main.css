@@ -738,6 +738,7 @@ section h3 {
 
 .intouch-form form {
 	line-height: 65px;
+	width: 75%;
 }
 
 .input-form {
@@ -783,6 +784,11 @@ section h3 {
 .intouch-form .qq {
 	cursor: pointer;
 	text-transform: capitalize;
+	transition: color 0.2s;
+}
+
+.intouch-form .qq:hover {
+	color: #ddd;
 }
 
 .intouch-form button:hover {
@@ -828,6 +834,48 @@ section h3 {
 
 .btn-readmore-aboutme:hover {
 	color: rgba(0,0,0,0.8);
+}
+
+.slider {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.slider__image {
+	height: 100%;
+	width: 100%;
+}
+
+.prev,
+.next {
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	transition: background 0.2s ease;
+	border-radius: 5px;
+}
+
+.prev:hover, 
+.next:hover {
+	background: #ddd;
+}
+
+.prev {
+	position: absolute;
+	top: 50%;
+	transform: translate(15px, -50%);
+	left: 15px;
+}
+
+.next {
+	position: absolute;
+	top: 50%;
+	transform: translate(-15px, -50%);
+	right: 15px;
 }
 
 .modal-container, .modal-container-two {
@@ -1161,7 +1209,7 @@ footer {
 	}
 	
 	.pos1 {
-		font-size: 1.0rem;
+		font-size: 0.8rem;
 		text-align: center;
 	}
 	
@@ -1294,6 +1342,12 @@ footer {
 	.intouch-form h3, .qq {
 		font-size: 0.4rem;
 	}
+	
+	.slider {
+		width: 470px;
+		margin: 0 auto;
+		position: relative;
+}
 	
 }
 
