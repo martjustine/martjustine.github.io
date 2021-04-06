@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(column1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+a {
+	text-decoration: none;
+	color: #ffa31a;
+}
+
+a:hover {
+	color: white;
+}
+
+h1 {
+	
+}
+
+.header-outer {
+	
+}
+
+.header-inner ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.header-inner li {
+	display: inline;
+	list-style-type: none;
+	margin: 20px;
+	font-family: calibri;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+input.register-input, .log-in {
+	border-radius: 5px;
+	padding: 12px 12px;
+	width: 75%;
+	border: none;
+	outline: none;
+	background: none;
+	border-bottom: 1px solid white;
+	color: white;
+	font-size: 17px;
+}
+
+::-ms-input-placeholder {
+	color: white;
+}
+
+::placeholder {
+	color: white;
+}
+
+:-ms-input-placeholder {
+	color: white;
+}
+
+.register-form-outer {
+	/* background-image:  register background image  */
+	/* background-repeat: no-repeat; */
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.background-inner {
+	background-image: url(inner-background.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 15% 0% 15% 0%;
+	background: rgba(0, 0, 0, 0.5); /* transparent attribute ng background */
+	box-shadow: 3px 3px black;
+	padding: 25px;
+}
+
+.register-form-inner {
+	height: 100%;
+	padding: 10px;
+	font-family: calibri;
+	font-size: 17px;
+	text-align: center;
+}
+
+ .register-btn, .log-in-btn {
+	text-align: center;
+}
+
+.register-button, .log-in-button {
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-family: calibri;
+	font-size: 17px;
+	font-weight: bold;
+	width: 75%;
+	background-image: linear-gradient(red, yellow);
+	color: white;
+	height: 40px;
+}
+
+.register-question {
+	color: white;
+	margin: 10px;
+}
+
+.footer-outer {
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.footer-inner {
+	margin: 20px;
+	text-align: center;
+	width: 20%;
+}
+
+.footer-inner p {
+	color: black;
+	font-family: calibri;
+	font-size: 17px;
+}
+
+.hr-footer {
+	width: 80%;
+	border-color: red;
+	border-width: 1px;
+	margin: 20px auto;
+}
+
+.log-in, .log-in-button {
+	margin: 15px;
+}
+
+.row-outer { /* para hindi sagad sa buong body ang dalawang box 80% lang ng body ang kukunin */
+	width: 80%;
+	margin: 0 auto; /* para gumitna yung kinuha nateng % ng body */
+}
+
+.column1, .column2 { /* para magkaroon ng equal na box sa body */
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 100%;
+}
+
+.column1 {
+
+}
+
+.column1-header { /* column1-header */
+	background-image: url(column1-header.jpg);
+	height: 100%;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px 4px black;
+}
+
+.login-form-outer-index {   /* attribute to ng black na background */
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.login-form-inner-index { /* pang adjust lang to ng mga nasa loob ng black na background */
+	padding: 10px;
+	height: 100%;
+	font-weight: bold;
+	font-family: calibri;
+	font-size: 17px;
+	text-align: center;
+}
+
+.background-inner-index {	/* black background at pampa transparent */
+	background-image: url(inner-background.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	border-radius: 15% 0% 15% 0%;
+	background: rgba(0, 0, 0, 0.5); /* transparent attribute ng background */
+	box-shadow: 3px 3px black;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+.registerlogo {
+	height: 135px;
+	width: 135px;
+}
+
+.h2-user-register {
+	margin: 0 auto;
+	position: relative;
+	top: -35px;
+	color: white;
+	width: 50%;
+	background-color: #262626;
+	text-align: center;
+	font-family: calibri;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.p-user-register {
+	font-family: calibri;
+	color: white;
+	font-size: 20px;
+}
+
+.userlogo {
+	height: 125px;
+	width: 125px;
+	border-radius: 100%;
+	padding: 10px;
+	margin: 10px;
+}
+	
+.h2-user-login {
+	margin: 0 auto;
+	position: relative;
+	top: -35px;
+	color: white;
+	width: 50%;
+	background-color: #262626;
+	text-align: center;
+	font-family: calibri;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.login-errorhandler, .register-errorhandler{
+	color: red;
+	margin: 0 auto;
+}
+
+.homepage-container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.userName {
+	color: blue;
+	font-size: 50px;
+}
+
+.register-success-notification {
+	color: #33ff33;
+	font-size: 23px;
+	font-weight: bold;
+}
